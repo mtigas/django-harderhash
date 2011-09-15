@@ -4,13 +4,20 @@ django-harderhash
 A port of `django-bcrypt`_ that doesn't use bcrypt, but a loop of sha384 (to stay
 within auth.User 128 character password field).
 
-See code comment under django_harderhash/__init__.py for more details.
-
 **Don't use this. Please. Seriously.** Use `django-bcrypt`_. `Here's why`_.
 
 .. _django-bcrypt: http://django-bcrypt.rtfd.org/
 .. _Here's why:
    http://codahale.com/how-to-safely-store-a-password/
+
+Why?
+----
+
+Because I wanted to use django-bcrypt, but needed to be able to support Windows-based
+developers -- who connect to the same databases as our *nix servers and other devs --
+without having to figure out how to compile py-bcrypt on their machines.
+
+If you can avoid the above situation, then don't use this.
 
 Installation and Usage
 ----------------------
