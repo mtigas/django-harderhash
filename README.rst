@@ -6,7 +6,7 @@ within auth.User 128 character password field).
 
 See code comment under django_harderhash/__init__.py for more details.
 
-Don't use this. Please. Seriously. Use `django-bcrypt`_. `Here's why`_.
+**Don't use this. Please. Seriously.** Use `django-bcrypt`_. `Here's why`_.
 
 .. _django-bcrypt: http://django-bcrypt.rtfd.org/
 .. _Here's why:
