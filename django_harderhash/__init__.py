@@ -7,6 +7,4 @@ other people/systems that *do* have bcrypt. (ex. development databases cloned fr
 working data, but with developers using Windows boxes.)
 
 No, really. You should really be using django-bcrypt.
-
--Mike Tigas
 """
